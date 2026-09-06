@@ -2,7 +2,7 @@
 
 Edgecase Wait is a pay-per-use event-driven waiting service for autonomous agents.
 
-- Site: https://wait.edgecasesystems.com/
+- Site: https://wait-site.edgecasesystems.workers.dev/
 - API: https://wait.edgecasesystems.workers.dev/
 - OpenAPI: https://wait.edgecasesystems.workers.dev/openapi.json
 - API catalog: https://wait.edgecasesystems.workers.dev/.well-known/api-catalog

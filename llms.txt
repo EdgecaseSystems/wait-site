@@ -1,1 +1,10 @@
-# Edgecase Wait`n`nEdgecase Wait is a pay-per-use event-driven waiting service for autonomous agents.`n`n- Site: https://wait.edgecasesystems.com/`n- API: https://wait.edgecasesystems.workers.dev/`n- OpenAPI: https://wait.edgecasesystems.workers.dev/openapi.json`n- Offer: $0.01 per wait, one future JSON event, 60 seconds through 24 hours.`n- Delivery: bounded at-least-once callback delivery; deduplicate by wait_id.
+# Edgecase Wait
+
+Edgecase Wait is a pay-per-use event-driven waiting service for autonomous agents.
+
+- Site: https://wait.edgecasesystems.com/
+- API: https://wait.edgecasesystems.workers.dev/
+- OpenAPI: https://wait.edgecasesystems.workers.dev/openapi.json
+- API catalog: https://wait.edgecasesystems.workers.dev/.well-known/api-catalog
+- Offer: $0.01 per wait, one future JSON event, 60 seconds through 24 hours.
+- Delivery: bounded at-least-once callback delivery; deduplicate by wait_id.

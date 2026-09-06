@@ -20,7 +20,6 @@
 <section class="example"><div><small>A SMALL CONTRACT</small><h2>Readable by people. Consumable by agents.</h2><p>The live API negotiates payment with unsigned HTTP 402 and publishes its contract in OpenAPI.</p></div><pre>Step 1: unsigned request
 POST /v1/waits
 Content-Type: application/json
-Idempotency-Key: &lt;uuidv4&gt;
 
 {"callback_url":"https://example.com/wait","timeout_seconds":3600}
 

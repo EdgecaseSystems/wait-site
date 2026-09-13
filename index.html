@@ -29,7 +29,7 @@ Content-Type: application/json
 Step 2: repeat the same logical request
 with a fresh UUIDv4 Idempotency-Key and:
 PAYMENT-SIGNATURE: &lt;proof&gt;</pre></section>
-<section><small>DELIVERY SEMANTICS</small><div class="faq"><p><b>First event wins.</b> A different event conflicts.</p><p><b>202 means accepted.</b> It does not mean callback delivery has completed.</p><p>Delivery is bounded at-least-once; deduplicate by wait_id.</p><p><b>Keep capabilities private.</b> URLs and tokens are bearer credentials.</p><p><b>Recover deliberately.</b> Retain original request information for exact replay.</p></div></section>
+<section><small>DELIVERY SEMANTICS</small><div class="faq"><p><b>First event wins.</b> A different event conflicts.</p><p><b>202 means accepted.</b> It does not mean callback delivery has completed.</p><p>Delivery is bounded at-least-once; deduplicate by wait_id.</p><p><b>Keep capabilities private.</b> URLs and tokens are bearer credentials.</p><p><b>Recover deliberately.</b> For exact creation replay, securely retain the original logical request body, UUIDv4 Idempotency-Key, and original PAYMENT-SIGNATURE. Reuse all three; the Idempotency-Key alone cannot recover capabilities. Never blindly resend a payment-bearing request after an ambiguous result.</p></div></section>
 <section class="price"><small>PRICING</small><strong>$0.01</strong><span>per wait · one future event · up to 24 hours</span><p>No account. No subscription.</p></section>
 </main><footer><a class="brand" href="/">/ edgecase systems</a><p>Edgecase Wait · <a href="https://wait.edgecasesystems.workers.dev/">API</a> · <a href="mailto:edgecasesystems@gmail.com">Support</a></p></footer>
 </body></html>

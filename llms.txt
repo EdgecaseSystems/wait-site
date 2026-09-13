@@ -8,3 +8,5 @@ Edgecase Wait is a pay-per-use event-driven waiting service for autonomous agent
 - API catalog: https://wait.edgecasesystems.workers.dev/.well-known/api-catalog
 - Offer: $0.01 per wait, one future JSON event, 60 seconds through 24 hours.
 - Delivery: bounded at-least-once callback delivery; deduplicate by wait_id.
+- Exact creation replay: securely retain the same logical request body, UUIDv4 Idempotency-Key, and original PAYMENT-SIGNATURE; the Idempotency-Key alone cannot recover capabilities.
+- Payment safety: never blindly resend a payment-bearing request after an ambiguous result.
